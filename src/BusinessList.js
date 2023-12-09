@@ -2,15 +2,12 @@ import React from 'react';
 import Business from './Business';
 
 
-function BusinessList() {
+function BusinessList({businesses}) {
     return (
         <div>
-          <Business/>
-          <Business/>
-          <Business/>
-          <Business/>
-          <Business/>
-          <Business/>
+          {businesses.map((business) => {
+            return <Business business={business} key={business.name} />
+          })}
         </div>
     )
 }
