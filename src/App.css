@@ -44,3 +44,11 @@ img {
   height: 300px;
   width: 300px;
 }
+
+.active {
+  color: red;
+}
+
+.inactive {
+  color: black;
+}
